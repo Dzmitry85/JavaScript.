@@ -1,0 +1,55 @@
+<script>
+var basket = [
+    {
+        product: "PC",
+        price: 100
+    },
+     {
+        product: "monitor",
+        price: 100
+    },
+     {
+        product: "doc",
+        price: 200
+    },
+     {
+        product: "list",
+        price: 300
+    }
+];
+var product, price, basket;
+    for(;;){
+        product= prompt("Введите название добавляемого товара для или 'stop' для выхода ");
+        if(product == "stop"){
+            break;
+        }
+   
+    price=+prompt("Введите цену товара "+ product);
+    baske={
+      product: product,
+        price: price
+    }
+    basket.push(baske)
+}
+ var basketPrice = 0;
+ for (var prod of basket){
+    basketPrice += prod.price;
+    console.log("Товар " + prod.product + " стоит: " + prod.price);
+}
+console.log("Стоимость корзины: " + basketPrice + " ");
+
+
+
+console.log('======== 3 задание ========');
+        function countBasketPrice(basket) {
+            var funBasketPrice = 0;
+            for (var prod of basket){
+                funBasketPrice += prod.price;
+            }
+            return funBasketPrice;
+        }
+
+        console.log("Стоимость корзины: " + countBasketPrice(basket) + " ");
+
+     
+</script>
