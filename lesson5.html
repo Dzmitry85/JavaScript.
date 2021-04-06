@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lesson5.style.css">
+<title>ChessBoard</title>
+
+    <script type="text/javascript">
+     
+      function CreateTable(){
+            var poz = document.getElementById('space');
+          
+            tab = document.createElement('table');
+            poz.appendChild(tab);
+
+            tab.border = '5';
+     
+             tab.style.display="inline-block";
+                 for (var i = 0; i < 8; i++){
+               
+                var row = tab.insertRow(i);
+                    for(var j = 0; j < 8; j++){
+             
+                    var cell = row.insertCell(j);
+                     var idStr = String.fromCharCode(65 + i).toUpperCase() + (j+1);
+                    cell.innerHTML = idStr;
+                    cell.id = idStr;
+                     cell.style.color = 'red ';
+                     cell.style.textAlign='center'
+                    cell.style.height = '90px';
+                    cell.style.width = '90px';
+                    if((i+j)%2){
+                        cell.style.backgroundColor='wite;'
+                    }
+                    else{
+                        cell.style.backgroundColor='black';
+              }
+                   }
+            }  
+ 
+        // Черные фигуры
+        document.querySelector("#A1").innerHTML='&#9820';
+        document.querySelector("#A2").innerHTML='&#9822';
+        document.querySelector("#A3").innerHTML='&#9821';
+        document.querySelector("#A4").innerHTML='&#9818';
+        document.querySelector("#A5").innerHTML='&#9819';
+        document.querySelector("#A6").innerHTML='&#9821';
+        document.querySelector("#A7").innerHTML='&#9822';
+        document.querySelector("#A8").innerHTML='&#9820';
+        document.querySelector("#B1").innerHTML='&#9823';
+        document.querySelector("#B2").innerHTML='&#9823';
+        document.querySelector("#B3").innerHTML='&#9823';
+        document.querySelector("#B4").innerHTML='&#9823';
+        document.querySelector("#B5").innerHTML='&#9823';
+        document.querySelector("#B6").innerHTML='&#9823';
+        document.querySelector("#B7").innerHTML='&#9823';
+        document.querySelector("#B8").innerHTML='&#9823'; 
+        // Белые фигуры 
+        document.querySelector("#H1").innerHTML='&#9814';
+        document.querySelector("#H2").innerHTML='&#9816';
+        document.querySelector("#H3").innerHTML='&#9815';
+        document.querySelector("#H4").innerHTML='&#9812';
+        document.querySelector("#H5").innerHTML='&#9813';
+        document.querySelector("#H6").innerHTML='&#9815';
+        document.querySelector("#H7").innerHTML='&#9816';
+        document.querySelector("#H8").innerHTML='&#9814';
+        document.querySelector("#G1").innerHTML='&#9817';
+        document.querySelector("#G2").innerHTML='&#9817';
+        document.querySelector("#G3").innerHTML='&#9817';
+        document.querySelector("#G4").innerHTML='&#9817';
+        document.querySelector("#G5").innerHTML='&#9817';
+        document.querySelector("#G6").innerHTML='&#9817';
+        document.querySelector("#G7").innerHTML='&#9817';
+        document.querySelector("#G8").innerHTML='&#9817';
+
+        document.querySelector("#C1").innerHTML=' ';
+        document.querySelector("#C2").innerHTML=' ';
+        document.querySelector("#C3").innerHTML=' ';
+        document.querySelector("#C4").innerHTML=' ';
+        document.querySelector("#C5").innerHTML=' ';
+        document.querySelector("#C6").innerHTML=' ';
+        document.querySelector("#C7").innerHTML=' ';
+        document.querySelector("#C8").innerHTML=' ';
+        document.querySelector("#D1").innerHTML=' ';
+        document.querySelector("#D2").innerHTML=' ';
+        document.querySelector("#D3").innerHTML=' ';
+        document.querySelector("#D4").innerHTML=' ';
+        document.querySelector("#D5").innerHTML=' ';
+        document.querySelector("#D6").innerHTML=' ';
+        document.querySelector("#D7").innerHTML=' ';
+        document.querySelector("#D8").innerHTML=' ';
+        document.querySelector("#E1").innerHTML=' ';
+        document.querySelector("#E2").innerHTML=' ';
+        document.querySelector("#E3").innerHTML=' ';
+        document.querySelector("#E4").innerHTML=' ';
+        document.querySelector("#E5").innerHTML=' ';
+        document.querySelector("#E6").innerHTML=' ';
+        document.querySelector("#E7").innerHTML=' ';
+        document.querySelector("#E8").innerHTML=' ';
+        document.querySelector("#F1").innerHTML=' ';
+        document.querySelector("#F2").innerHTML=' ';
+        document.querySelector("#F3").innerHTML=' ';
+        document.querySelector("#F4").innerHTML=' ';
+        document.querySelector("#F5").innerHTML=' ';
+        document.querySelector("#F6").innerHTML=' ';
+        document.querySelector("#F7").innerHTML=' ';
+        document.querySelector("#F8").innerHTML=' ';
+      
+    }
+      
+    </script>
+</head>
+
+<body onload="CreateTable()" id ="space">
+<h1 class="abc"> A  B  C  D  E  F  G  H</h1>
+
+<ul class='sc'>
+<li><h1>8</h1></li><br><br><br>
+<li><h1>7</h1></li><br><br><br>
+<li><h1>6</h1></li><br><br><br>
+<li><h1>5</h1></li><br><br><br>
+<li><h1>4</h1></li><br><br><br>
+<li><h1>3</h1></li><br><br><br>
+<li><h1>2</h1></li><br><br><br>
+<li><h1>1</h1></li><br><br><br>
+</ul>
+
+</body>
+</html>
+
