@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+    <title>Lessons6</title>
+    <script>
+        var path;
+        window.onload= unit;
+        function unit(){
+        var image=document.getElementsByTagName("img");
+
+      for( var i=0; i<image.length; i++ ){
+          image[i].onclick=bigPicture;
+      }
+    }
+    function bigPicture(e){
+        var pictureMas= document.getElementById("Picture");
+        pictureMas.innerHTML="";
+        var small=event.target;
+        var path='Big/'+ "p"+(e.target.id[1])+'.jpg';
+            var picB= document.createElement("img");
+        picB.src= path;
+        pictureMas.appendChild(picB);
+        picB.onerror=function(){
+            alert("Нет изображения");
+        }
+
+    }
+    </script>
+</head>
+
+<body class="body">
+   <div class="di" id="Picture"></div>
+   <div>
+    <img id="a1" src="Small/p1.jpg" alt="">
+    <img id="a2" src="Small/p2.JPG" alt="">
+    <img id="a3" src="Small/p3.JPG" alt=""> 
+   </div>
+    
+
+</body>
+
+</html>
