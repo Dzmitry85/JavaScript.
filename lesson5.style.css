@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0; 
+ }
+     .body{
+     display: inline;
+     
+ } 
+ .abc{
+     display: inline-block;
+     padding-left: 145px;
+     padding-top: 100px;
+     letter-spacing: 32px;
+    width: 100%;
+   padding-bottom: 0px;
+
+     
+ }
+ .sc{
+    display: inline-block;
+    margin-left: 95px;
+    letter-spacing: 10px;
+list-style-type: none;
+ 
+ }
+ 
